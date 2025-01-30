@@ -47,8 +47,8 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <div className="">
-      <div className="flex justify-between items-center m-4 p-4 ">
+    <div className="m-0 p-0 bg-slate-100 dark:bg-black text-black dark:text-white">
+      <div className="flex justify-between items-center mx-4 my-0 p-4 ">
         <div className="subhead font-medium text-2xl md:pl-32">Projects</div>
         <div className="navigate flex md:pr-32 gap-4">
           <IoIosArrowBack
@@ -255,12 +255,22 @@ const Projects: React.FC = () => {
           {/* Simon Game */}
 
           <div className="w-96 h-[500px] bg-white text-black rounded-lg shadow-md">
-            <div className="w-[370px] h-[200px] m-2 p-1 rounded-lg">
-              <Image
-                src={simon}
-                alt="Simon Game"
-                className="w-full h-full object-cover rounded-md blur-[2px] hover:blur-none"
-              />
+            <div className="w-[370px] h-[200px] m-2 p-1 rounded-lg relative">
+              <a
+                href="https://rajathshttgr.github.io/simon-game"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full h-full"
+              >
+                <Image
+                  src={simon}
+                  alt="Simon Game"
+                  className="w-full h-full object-cover rounded-md blur-[2px] hover:blur-none"
+                />
+                <p className="absolute inset-0 flex items-center justify-center text-white font-normal rounded-md">
+                  simon-game <GoLinkExternal />
+                </p>
+              </a>
             </div>
             <div>
               <div className="text-xl font-semibold text-center">
@@ -290,12 +300,22 @@ const Projects: React.FC = () => {
 
           {/* tic Tac Toe game */}
           <div className="w-96 h-[500px] bg-white text-black rounded-lg shadow-md">
-            <div className="w-[370px] h-[200px] m-2 p-1 rounded-lg">
-              <Image
-                src={tictactoe}
-                alt="Tic Tac Toe"
-                className="w-full h-full object-cover rounded-md blur-[2px] hover:blur-none"
-              />
+            <div className="w-[370px] h-[200px] m-2 p-1 rounded-lg relative">
+              <a
+                href="https://rajathshttgr.github.io/TicTacToe-Game/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full h-full"
+              >
+                <Image
+                  src={tictactoe}
+                  alt="Tic Tac Toe"
+                  className="w-full h-full object-cover rounded-md blur-[2px] hover:blur-none"
+                />
+                <p className="absolute inset-0 flex items-center justify-center text-white font-normal rounded-md">
+                  tictactoe-game <GoLinkExternal />
+                </p>
+              </a>
             </div>
             <div>
               <div className="text-xl font-semibold text-center">
