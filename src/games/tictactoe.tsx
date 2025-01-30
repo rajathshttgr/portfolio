@@ -4,7 +4,7 @@ import maintanance from "../assets/maintanance.png";
 
 const tictactoe = () => {
   return (
-    <div className="text-center bg-black h-full rounded-lg">
+    <div className="text-center bg-slate-100 dark:bg-black h-full rounded-lg">
       <div className="flex  flex-col justify-center items-center h-full">
         <Image
           src={maintanance}
